@@ -1,0 +1,100 @@
+{
+  "usuarios": [
+    {
+      "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+      "nombre": "Juan Pérez",
+      "email": "juanperez09@gmail.com",
+      "estado": "habilitado",
+      "fechaAlta": "2025-09-01 10:00:00",
+      "fechaUltimoIngreso": "2025-09-08 09:30:00"
+    },
+    {
+      "id": "9a881b5c-12d4-4f8d-bc2a-7a31c4d89e01",
+      "nombre": "Ana López",
+      "email": "analopezz10@hotmail.com",
+      "estado": "habilitado",
+      "fechaAlta": "2025-09-02 11:30:00",
+      "fechaUltimoIngreso": "2025-09-09 15:20:00"
+    },
+    {
+      "id": "2d3e8f1a-45b6-78c9-0b12-d3456e7f890a",
+      "nombre": "Carlos Gómez",
+      "email": "carlosgomez1999@outlook.com",
+      "estado": "inhabilitado",
+      "fechaAlta": "2025-08-25 08:15:00",
+      "fechaUltimoIngreso": null
+    }
+  ],
+  "soportes": [
+    {
+      "id": "1a2b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5d",
+      "nombre": "Soporte Nivel 1",
+      "nivelSoporte": 1,
+      "estado": "activo"
+    },
+    {
+      "id": "abcdef12-3456-4bcd-efab-1234567890ab",
+      "nombre": "Soporte Nivel 2",
+      "nivelSoporte": 2,
+      "estado": "activo"
+    },
+    {
+      "id": "87654321-0abc-4def-8765-43210abcdef9",
+      "nombre": "Soporte Nivel 3",
+      "nivelSoporte": 3,
+      "estado": "inactivo"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "6b9c3a2e-1f87-4d22-b5a0-c84d9e7f1a3b",
+      "descripcion": "No imprime la impresora HP",
+      "fechaAlta": "2025-09-03 09:12:00",
+      "fechaUltimoCambio": "2025-09-03 09:12:00",
+      "estado": "Inicial",
+      "clienteId": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+      "soporteId": null,
+      "categoriaId": "0a1b2c3d-4e5f-4a6b-7c8d-9e0f1a2b3c4d",
+      "fechaCierre": null
+    },
+    {
+      "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+      "descripcion": "Problema con el VPN de la empresa",
+      "fechaAlta": "2025-09-04 14:00:00",
+      "fechaUltimoCambio": "2025-09-04 15:00:00",
+      "estado": "Asignado",
+      "clienteId": "9a881b5c-12d4-4f8d-bc2a-7a31c4d89e01",
+      "soporteId": "1a2b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5d",
+      "categoriaId": "87e4c30-9a2b-4f5d-8c61-a3b4c5d6e7f8",
+      "fechaCierre": null
+    },
+    {
+      "id": "fae45d22-78b3-4c91-8a1e-d3f7c888b9a0",
+      "descripcion": "No arranca la notebook",
+      "fechaAlta": "2025-09-05 10:30:00",
+      "fechaUltimoCambio": "2025-09-06 09:45:00",
+      "estado": "Resuelto",
+      "clienteId": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+      "soporteId": "bcdef12-3456-4bcd-efab-1234567890ab",
+      "categoriaId": "0a1b2c3d-4e5f-4a6b-7c8d-9e0f1a2b3c4d",
+      "fechaCierre": "2025-09-06 09:45:00"
+    },
+    {
+      "id": "324f5e67-89a1-4b2c-d3e4-f56789a1b2c3",
+      "descripcion": "Error en el login del sistema",
+      "fechaAlta": "2025-09-06 08:20:00",
+      "fechaUltimoCambio": "2025-09-07 13:10:00",
+      "estado": "Cerrado",
+      "clienteId": "2d3e8f1a-45b6-78c9-0b12-d3456e7f890a",
+      "soporteId": "abcdef12-3456-4bcd-efab-1234567890ab",
+      "categoriaId": "e6f7a8b9-0c1d-4e2f-8a3b-c4d5e6f7a8b9",
+      "fechaCierre": "2025-09-07 13:10:00"
+    }
+  ],
+  "categorias": [
+    { "id": "d87e4c30-9a2b-4f5d-8c61-a3b4c5d6e7f8", "nombre": "Red" },
+    { "id": "0a1b2c3d-4e5f-4a6b-7c8d-9e0f1a2b3c4d", "nombre": "Hardware" },
+    { "id": "b5c8d9e0-f1a2-4b3c-8d4e-f5a6b7c8d9e0", "nombre": "Software" },
+    { "id": "e6f7a8b9-0c1d-4e2f-8a3b-c4d5e6f7a8b9", "nombre": "Seguridad" }
+  ]
+}
